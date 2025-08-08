@@ -1,0 +1,30 @@
+{
+  "name": "chatgpt-clone",
+  "version": "1.0.0",
+  "proxy": "http://localhost:3000",
+  "description": "Chatgpt Clone",
+  "license": "MIT",
+  "author": "Aayush",
+  "type": "module",
+  "main": "nodemon Server.js",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "client": "npm start --prefix ./client",
+  "server": "nodemon Server.js",
+  "dev": "concurrently \"npm run server\" \"npm run client\""
+},
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "colors": "^1.4.0",
+    "concurrently": "^9.2.0",
+    "cookie": "^1.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10"
+  }
+}
